@@ -30,3 +30,15 @@
     abort();
   }
   % endfor
+  void* dlopen(const char* filename, int flags) {
+    fprintf(stderr, "Should never reach here");
+    abort();
+  }
+  char* dlerror(void) {
+    fprintf(stderr, "Should never reach here");
+    abort();
+  }
+  void* dlsym(void* handle, const char* symbol) {
+    fprintf(stderr, "Should never reach here");
+    abort();
+  }
